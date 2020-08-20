@@ -1,0 +1,38 @@
+
+b = {};
+b.Name = 'box1';
+b.Width = 10;
+b.Height = 10;
+
+t = {};
+t.Name = 'tree1';
+t.X = -15;
+t.Y = 0;
+t.Diameter = 10;
+t.Height = 30;
+t.TopDiameter = 4;
+t.TrunkHeight = 8;
+
+p = {};
+p.Name = 'testPanel';
+p.Subarray = 1;
+p.String = 1;
+p.Group = 1; // string or number?
+p.X = 0;
+p.Y = 0;
+p.Z = 10;
+p.Width = 5;
+p.Length = 10;
+p.Azimuth = 180;
+p.Tilt = 15;
+p.Shape = 'rectangle'; // rectangle, triangle
+
+
+clear_scene();
+Box1 = create("Box");
+property(Box1,b);
+Tree1 = create("Tree");
+property(Tree1,t);
+Subarray1 = create('Active surface');
+property( Subarray1, p );
+switch_to(1);
